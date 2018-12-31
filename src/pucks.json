@@ -1,0 +1,74 @@
+[
+  {
+    "clicked": false,
+    "id": 0,
+    "name": "Blues",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33583&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 1,
+    "name": "Sharks",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33582&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 2,
+    "name": "Penguins",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33581&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 3,
+    "name": "Flyers",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33580&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 4,
+    "name": "Devils",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33577&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 5,
+    "name": "Wild",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33576&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 6,
+    "name": "Kings",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33575&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 7,
+    "name": "Sabres",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33570&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 8,
+    "name": "Blackhawks",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33571&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 9,
+    "name": "Redwings",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33574&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 10,
+    "name": "Stars",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33573&div_id=1&pic_type=3&mtx_id=0"
+  },
+  {
+    "clicked": false,
+    "id": 11,
+    "name": "Avalanche",
+    "image": "https://images.hockeygiant.com/img.aspx?itm_id=33572&div_id=1&pic_type=3&mtx_id=0"
+  }
+]
