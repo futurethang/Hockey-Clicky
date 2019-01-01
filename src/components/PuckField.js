@@ -8,11 +8,6 @@ import Puck from '../components/Puck'
 class PuckArea extends React.Component {
   constructor(props) {
     super(props);
-    this.puckId = this.puckId.bind(this)
-  }
-
-  puckId(p) {
-    console.log(p)
   }
 
   render() {
@@ -23,7 +18,7 @@ class PuckArea extends React.Component {
             <Row className="show-grid text-center">
               {
                 this.props.data.map((puck) => {
-                  console.log(puck.name)
+                  {/* console.log(puck.name) */}
                   return <Puck key={puck.id} puck={puck} puckId={this.props.puckId}/>
                 })
               }
