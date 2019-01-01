@@ -11,11 +11,15 @@ class App extends Component {
     topScore: 0,
   }
 
+  handleClick = (i) => {
+    alert(i)
+  }
+
   render() {
     return (
       <div>
         <NavBar />
-        <PuckField data={this.state.data}/>
+        <PuckField data={this.state.data} puckId={this.handleClick}/>
       </div>
     );
   }
