@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div>
       <Navbar>
@@ -15,7 +15,7 @@ const NavBar = () => {
           <Navbar.Text>
             Click the pucks, just don't hit the same one twice!
           </Navbar.Text>
-          <Navbar.Text pullRight>Score: 0 | Top Score: 0</Navbar.Text>
+          <Navbar.Text pullRight>Score: {props.score} | Top Score: {props.topScore}</Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
     </div>

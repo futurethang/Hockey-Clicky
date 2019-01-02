@@ -8,18 +8,38 @@ import Puck from '../components/Puck'
 class PuckArea extends React.Component {
   constructor(props) {
     super(props);
+    this.clickShuffle = this.clickShuffle.bind(this);
+    this.shuffleArray = this.shuffleArray.bind(this);
+    this.puckArray = this.props.data;
+    this.shuffledArr = this.shuffleArray([1, 32, 3, 4, 5, 6]);
+    this.state = {
+      pucks: this.shuffleArray(this.props.data)
+    }
+  }
+
+  clickShuffle = () => {
+    this.setState({
+      pucks: this.shuffleArray(this.state.pucks)
+    })
+  }
+
+  shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 
   render() {
     return (
       <div>
         <div>
-          <Grid fluid="true">
+          <Grid fluid="true"> {console.log(this.shuffledArr)}
             <Row className="show-grid text-center">
               {
-                this.props.data.map((puck) => {
-                  {/* console.log(puck.name) */}
-                  return <Puck key={puck.id} puck={puck} puckId={this.props.puckId}/>
+                this.state.pucks.map((puck) => {
+                  return <Puck key={puck.id} puck={puck} puckId={this.props.puckId} shuffle={this.clickShuffle}/>
                 })
               }
             </Row>

@@ -16,7 +16,14 @@ class App extends Component {
     this.setState({ score: newScore })
     console.log(this.state.score)
   }
+
+  checkPuckClickedStatus = (id) => {
+    //replace messages with methods
+    this.state.data[id].clicked ? console.log("game over!") : this.incrementScore()
+  };
+
   puckClicked = (id) => {
+    this.checkPuckClickedStatus(id);
     let thisPuck = this.state.data[id];
     thisPuck.clicked = true;
     this.setState({
@@ -28,7 +35,6 @@ class App extends Component {
   }
 
   handleClick = (i) => {
-    this.incrementScore();
     this.puckClicked(i);
     this.shufflePucks()
   }
@@ -36,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar score={this.state.score} topScore={this.state.topScore}/>
         <PuckField data={this.state.data} puckId={this.handleClick} />
       </div>
     );
