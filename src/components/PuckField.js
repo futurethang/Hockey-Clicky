@@ -11,7 +11,6 @@ class PuckArea extends React.Component {
     this.clickShuffle = this.clickShuffle.bind(this);
     this.shuffleArray = this.shuffleArray.bind(this);
     this.puckArray = this.props.data;
-    this.shuffledArr = this.shuffleArray([1, 32, 3, 4, 5, 6]);
     this.state = {
       pucks: this.shuffleArray(this.props.data)
     }
@@ -35,7 +34,7 @@ class PuckArea extends React.Component {
     return (
       <div>
         <div>
-          <Grid fluid="true"> {console.log(this.shuffledArr)}
+          <Grid fluid="true">
             <Row className="show-grid text-center">
               {
                 this.state.pucks.map((puck) => {
