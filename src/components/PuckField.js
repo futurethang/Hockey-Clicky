@@ -12,7 +12,7 @@ class PuckArea extends React.Component {
     this.shuffleArray = this.shuffleArray.bind(this);
     this.puckArray = this.props.data;
     this.state = {
-      pucks: this.shuffleArray(this.props.data)
+      pucks: []
     }
   }
 
