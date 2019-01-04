@@ -18,11 +18,12 @@ return (
       <img src={props.puck.image} onClick={() => {
         console.log("from the img click", alertProps)
         props.puckId(props.puck.id);
-        props.shuffle()
+        {/* props.shuffle() */}
       }} />
-      <span>{props.puck.id.toString()}</span>
-      <span>{props.puck.name.toString()}</span>
-      <span>{props.puck.clicked.toString()}</span>
+      {/* helper text for dev */}
+      {/* <span>{props.puck.id.toString()}</span> */}
+      {/* <span>{props.puck.name.toString()}</span> */}
+      {/* <span>{props.puck.clicked.toString()}</span> */}
     </Col>
 
   </div>

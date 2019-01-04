@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   incrementScore = (e) => {
-    let newScore = this.state.score += 1;
+    let newScore = this.state.score + 1;
     this.setState({ score: newScore })
     console.log(this.state.score)
   }
@@ -70,14 +70,18 @@ class App extends Component {
   render() {
     return (
       this.state.gameOver === true ?
+        
         <div>
           <GameOverModal newGame={this.newGame}/>
         </div>
+        
         :
+        
         <div>
           <NavBar score={this.state.score} topScore={this.state.topScore} />
           <PuckField data={this.state.data} puckId={this.handleClick} />
         </div>
+      
     );
   }
 }

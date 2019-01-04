@@ -10,11 +10,8 @@ class PuckArea extends React.Component {
     super(props);
     this.clickShuffle = this.clickShuffle.bind(this);
     this.shuffleArray = this.shuffleArray.bind(this);
-    this.puckArray = this.props.data;
-    this.state = {
-      pucks: []
-    }
   }
+  // refactor so that the state is pure from the props, but is simply randomized before the view is rendered
 
   clickShuffle = () => {
     this.setState({
@@ -31,14 +28,18 @@ class PuckArea extends React.Component {
   }
 
   render() {
+    let copiedArr = this.props.data.slice(0);
+    let shuffledPucks = this.shuffleArray(copiedArr);
     return (
       <div>
         <div>
           <Grid fluid="true">
             <Row className="show-grid text-center">
               {
-                this.state.pucks.map((puck) => {
-                  return <Puck key={puck.id} puck={puck} puckId={this.props.puckId} shuffle={this.clickShuffle}/>
+                // make a temp copy that is shuffled for mapping, and remove the shuffle click
+                
+                shuffledPucks.map((puck) => {
+                  return <Puck key={puck.id} puck={puck} puckId={this.props.puckId} />
                 })
               }
             </Row>
