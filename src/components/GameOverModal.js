@@ -1,19 +1,28 @@
 import React from 'react'
-import {Modal, Button} from 'react-bootstrap'
+import { Modal, Button } from 'react-bootstrap'
 
 const GameOverModal = (props) => {
   return (
     <div className="static-modal">
       <Modal.Dialog>
         <Modal.Header>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>GAME OVER</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>One fine body...</Modal.Body>
+        <Modal.Body>
+
+
+          Nice work you scored {props.score}
+          <br />
+
+          Try to beat your current top score of {props.topScore}
+
+
+
+        </Modal.Body>
 
         <Modal.Footer>
-          <Button onClick={() => props.newGame()}>Close</Button>
-          <Button bsStyle="primary">Save changes</Button>
+          <Button onClick={() => props.newGame()}>Try again!</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </div>

@@ -72,7 +72,10 @@ class App extends Component {
       this.state.gameOver === true ?
         
         <div>
-          <GameOverModal newGame={this.newGame}/>
+          <GameOverModal
+            newGame={this.newGame}
+            score={this.state.score}
+            topScore={this.state.topScore} />
         </div>
         
         :
