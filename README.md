@@ -2,7 +2,7 @@
 
 ##### Click on the pucks to get points, but that game is over when you hit the same team twice. Try for a best score!
 
-##### [Play now!]()
+##### [Play now!](https://futurethang.github.io/Hockey-Clicky/)
 
 #### App Summary
 
