@@ -8,7 +8,7 @@
 
 #### App Summary
 
-This game is built using React.js fundamentals to render dynamic components that mutate the state of the game to keep track of user interactions and scores. It is built with repsonsive styling in mind.
+This game is built using React.js fundamentals to render dynamic components that mutate the state of the game to keep track of user interactions and scores. It is built with responsive styling in mind.
 
 #### Lessons and Potential
 
